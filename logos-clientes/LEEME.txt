@@ -1,0 +1,28 @@
+LOGOS DE CLIENTES — INDEL S.R.L.
+=================================
+
+Coloca en esta carpeta los logos de las marcas con ESTOS NOMBRES EXACTOS
+(en minusculas, formato .png, preferentemente con fondo transparente):
+
+  john-deere.png
+  pampa-energia.png
+  molinos-rio.png
+  mahle.png
+  ccu.png
+  crucianelli.png
+  franco-fabril.png
+  grupo-corven.png
+  agrometal.png
+  adeco.png
+  erca.png
+  bertini.png
+
+RECOMENDACIONES
+---------------
+- Formato PNG con fondo transparente (o SVG).
+- Logos horizontales se ven mejor; alto util en la web: ~56px.
+- Tamano sugerido: ancho aprox. 240px, alto aprox. 100px.
+- Si un logo lo tenes en SVG, guardalo con el mismo nombre pero .svg
+  y avisame para cambiar la referencia en index.html.
+
+Si el nombre del archivo no coincide exactamente, el logo no se vera.
