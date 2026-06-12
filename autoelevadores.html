@@ -16,7 +16,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
   <script>
     document.documentElement.classList.add('js');
@@ -39,6 +39,7 @@
       --blanco: #FFFFFF;
       --verde: #25D366;
       --borde: #e5e5e5;
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     html {
@@ -70,9 +71,11 @@
     }
 
     h1, h2, h3, h4 {
-      font-weight: 500;
+      font-family: 'Archivo', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 600;
       color: var(--negro);
       line-height: 1.3;
+      letter-spacing: -0.01em;
     }
 
     .container {
@@ -98,7 +101,7 @@
       border-radius: 4px;
       border: none;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: transform 0.16s var(--ease-out), background-color 0.2s ease;
     }
 
     .btn:active {
@@ -203,7 +206,7 @@
       align-items: center;
       gap: 6px;
       color: #cfcfcf;
-      transition: all 0.2s ease;
+      transition: color 0.2s ease;
     }
 
     .topbar-right a:hover {
@@ -221,7 +224,7 @@
       position: sticky;
       top: 0;
       z-index: 900;
-      transition: all 0.2s ease;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .navbar.scrolled {
@@ -256,7 +259,7 @@
     .nav-links a {
       font-size: 0.95rem;
       color: var(--gris-oscuro);
-      transition: all 0.2s ease;
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
@@ -283,7 +286,7 @@
       width: 24px;
       height: 2px;
       background: var(--negro);
-      transition: all 0.2s ease;
+      transition: transform 0.2s var(--ease-out);
     }
 
     /* ============ 3. HERO DE PRODUCTO ============ */
@@ -320,7 +323,7 @@
 
     .breadcrumb a {
       color: #8a8a8a;
-      transition: all 0.2s ease;
+      transition: color 0.2s ease;
     }
 
     .breadcrumb a:hover {
@@ -468,7 +471,7 @@
       border-radius: 4px;
       display: flex;
       flex-direction: column;
-      transition: all 0.2s ease;
+      transition: transform 0.2s var(--ease-out), box-shadow 0.2s ease;
     }
 
     .modelo-card:hover {
@@ -541,7 +544,7 @@
       padding: 28px 18px;
       border: 1px solid var(--borde);
       border-radius: 4px;
-      transition: all 0.2s ease;
+      transition: transform 0.2s var(--ease-out), box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .aplicacion-item:hover {
@@ -607,7 +610,7 @@
       border: 1px solid var(--borde);
       border-radius: 4px;
       background: var(--blanco);
-      transition: all 0.2s ease;
+      transition: border-color 0.2s ease;
     }
 
     .form-group input:focus,
@@ -665,7 +668,7 @@
       margin-bottom: 14px;
       background: var(--gris-claro);
       border: 1px solid var(--borde);
-      transition: all 0.2s ease;
+      transition: transform 0.2s var(--ease-out);
     }
 
     .info-card.verde {
@@ -775,7 +778,7 @@
 
     .footer-links a {
       color: #666;
-      transition: all 0.2s ease;
+      transition: color 0.2s ease;
     }
 
     .footer-links a:hover {
@@ -810,7 +813,7 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      transition: all 0.2s ease;
+      transition: transform 0.16s var(--ease-out), background-color 0.2s ease;
     }
 
     .float-whatsapp .btn-circulo:hover {
@@ -838,7 +841,7 @@
       white-space: nowrap;
       opacity: 0;
       pointer-events: none;
-      transition: all 0.2s ease;
+      transition: opacity 0.2s ease;
     }
 
     .float-whatsapp:hover .float-tooltip {
@@ -846,6 +849,22 @@
     }
 
     /* ============ RESPONSIVE — TABLET ============ */
+    /* Pulido de motion (Emil): hover rápido tras la reveal */
+      .js .modelo-card:hover,
+      .js .aplicacion-item:hover {
+      transition-duration: 0.2s;
+    }
+
+    /* Hover lift solo con puntero fino — evita el "hover pegado" al tocar en mobile */
+    @media (hover: none) {
+        .modelo-card:hover,
+        .aplicacion-item:hover,
+        .info-card:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+
     @media (max-width: 768px) {
       section {
         padding: 56px 0;
@@ -975,12 +994,12 @@
     .js .contacto-info {
       opacity: 0;
       transform: translateY(26px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+      transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
     }
 
     .js .modelo-card,
     .js .aplicacion-item {
-      transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out), box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .js .visible {
