@@ -3,7 +3,46 @@
     "allow": [
       "Bash(xxd)",
       "Bash(git --version)",
-      "Bash(gh --version)"
+      "Bash(gh --version)",
+      "Bash(grep -rn \"data/\\\\|templates/\\\\|Path\\(__file__\\)\\\\|\\\\.\\\\./\\\\|parent\" src/ui-ux-pro-max/scripts/*.py)",
+      "Bash(rm -rf /tmp/ui-ux-pro-max-skill && echo \"limpio\")",
+      "WebFetch(domain:impeccable.style)",
+      "Bash(npx --yes impeccable skills install)",
+      "Bash(npx --yes impeccable skills install --help)",
+      "Bash(cd ~ && printf 'y\\\\n' | npx --yes impeccable skills install 2>&1 | tail -40)",
+      "Read(//c/Users/emane/**)",
+      "Bash(npm view *)",
+      "Bash(npx --yes impeccable skills install --force)",
+      "Skill(impeccable)",
+      "Skill(impeccable:*)",
+      "Bash(node ~/.claude/skills/impeccable/scripts/context.mjs)",
+      "Bash(node ~/.claude/skills/impeccable/scripts/detect.mjs --json aire-comprimido.html)",
+      "Bash(sed -n '70,75p' index.html)",
+      "Bash(sed -n '88,93p' producto-template.html)",
+      "Bash(node ~/.claude/skills/impeccable/scripts/detect.mjs --help)",
+      "Bash(node ~/.claude/skills/impeccable/scripts/detect.mjs --json .)",
+      "WebFetch(domain:emilkowal.ski)",
+      "Bash(npx --yes skills add emilkowalski/skill)",
+      "Bash(node ~/.claude/skills/impeccable/scripts/detect.mjs --json producto-template.html)",
+      "Bash(node _polish-motion.mjs)",
+      "Bash(curl -s -L \"https://images.unsplash.com/photo-1553413077-190dd305871c?w=1000&q=70\" --max-time 30 -o /tmp/c1.jpg)",
+      "Bash(curl -s -L \"https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1000&q=70\" --max-time 30 -o /tmp/c2.jpg)",
+      "Bash(curl -s -L \"https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1000&q=70\" --max-time 30 -o /tmp/c3.jpg)",
+      "Bash(curl -s -L \"https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1000&q=70\" --max-time 30 -o /tmp/c4.jpg)",
+      "Bash(cp /tmp/c1.jpg ./_c1.jpg)",
+      "Bash(cp /tmp/c2.jpg ./_c2.jpg)",
+      "Bash(cp /tmp/c3.jpg ./_c3.jpg)",
+      "Bash(cp /tmp/c4.jpg ./_c4.jpg)",
+      "Bash(rm -f _c1.jpg _c2.jpg _c3.jpg _c4.jpg)",
+      "Bash(curl -s -L \"https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&h=1000&fit=crop&crop=center&q=78\" --max-time 40 -o img/hero-deposito.jpg)",
+      "Bash(file img/hero-deposito.jpg)",
+      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; if \\(-not \\(Test-Path $edge\\)\\) { $edge = \"C:\\\\Program Files\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" }; Test-Path $edge)",
+      "WebFetch(domain:indel-industrial.preview.emergentagent.com)",
+      "Bash(grep -vE '^\\\\s*$')",
+      "Bash(perl -0777 -i -pe ' *)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
     ]
   }
 }
