@@ -7,10 +7,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Metrología en Rosario — INDEL S.R.L. Instrumentos de medición y control de calidad para procesos industriales exigentes. Venta y asesoramiento técnico.">
+  <meta name="description" content="Metrología en Rosario — INDEL S.R.L. Soluciones para la medición y el control de procesos productivos. Especialistas en scanner 3D e impresión 3D, con asesoramiento técnico.">
   <meta name="author" content="INDEL S.R.L.">
   <meta property="og:title" content="Metrología — INDEL S.R.L. Rosario">
-  <meta property="og:description" content="Instrumentos de medición y control de calidad para procesos industriales exigentes, con asesoramiento técnico.">
+  <meta property="og:description" content="Soluciones para la medición y el control de procesos productivos: scanner 3D, impresión 3D e instrumental de medición, con asesoramiento técnico.">
   <meta property="og:type" content="website">
   <title>Metrología — INDEL S.R.L.</title>
 
@@ -39,7 +39,7 @@
       --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    html { scroll-behavior: smooth; scroll-padding-top: 108px; }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -61,8 +61,8 @@
       letter-spacing: -0.025em;
     }
 
-    .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
-    section { padding: 88px 0; }
+    .container { max-width: 1360px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 62px 0; }
 
     /* ============ BOTONES ============ */
     .btn {
@@ -115,14 +115,14 @@
       transition: box-shadow 0.2s ease;
     }
     .navbar.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
-    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 92px; }
     .logo { display: flex; align-items: center; }
-    .logo-img { height: 46px; width: auto; display: block; }
+    .logo-img { height: 58px; width: auto; display: block; }
     .nav-links { display: flex; gap: 34px; }
-    .nav-links a { font-size: 0.96rem; font-weight: 500; color: var(--gris-texto); transition: color 0.2s ease; }
+    .nav-links a { font-size: 1.08rem; font-weight: 500; color: var(--gris-texto); transition: color 0.2s ease; }
     .nav-links a:hover { color: var(--rojo); }
     .nav-right { display: flex; align-items: center; gap: 16px; }
-    .nav-cta { padding: 12px 22px; font-size: 0.92rem; }
+    .nav-cta { padding: 13px 24px; font-size: 1rem; }
     .hamburguesa { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
     .hamburguesa span { width: 24px; height: 2px; background: var(--tinta); border-radius: 2px; }
 
@@ -179,6 +179,8 @@
     /* ============ DETALLE + CARACTERÍSTICAS ============ */
     .detalle { background: var(--blanco); }
     .detalle-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; margin-top: 34px; align-items: start; }
+    .detalle .caracteristicas { align-self: start; margin-top: -92px; }
+    .detalle > .container > .eyebrow, .detalle > .container > .seccion-h2 { max-width: 620px; }
     .detalle-texto p { margin-bottom: 18px; font-size: 1.05rem; color: var(--gris-texto); }
     .detalle-texto p:last-child { margin-bottom: 0; }
     .caracteristicas {
@@ -198,7 +200,8 @@
 
     /* ============ MODELOS / MARCAS ============ */
     .modelos { background: var(--fondo-claro); }
-    .modelos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 44px; }
+    .modelos-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; margin-top: 44px; }
+    .modelos-grid .modelo-card { width: 480px; max-width: 100%; }
     .modelo-card {
       background: var(--blanco);
       border: 1px solid var(--borde);
@@ -209,10 +212,11 @@
     }
     .modelo-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(10,10,11,0.1); }
     .modelo-logo {
-      height: 104px; display: flex; align-items: center; justify-content: center;
-      padding: 20px 24px; border-bottom: 1px solid var(--borde);
+      height: 150px; display: flex; align-items: center; justify-content: center;
+      padding: 22px 26px; border-bottom: 1px solid var(--borde);
     }
-    .modelo-logo img { max-height: 56px; max-width: 100%; width: auto; object-fit: contain; }
+    .modelo-logo img { max-height: 92px; max-width: 84%; width: auto; object-fit: contain; }
+    .modelo-logo img.logo-ams { max-height: 130px; max-width: 100%; }
     .modelo-logo-txt { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--tinta); }
     .modelo-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
     .modelo-nombre { font-size: 1.18rem; font-weight: 700; color: var(--tinta); margin-bottom: 8px; }
@@ -240,7 +244,7 @@
 
     /* ============ CONTACTO ============ */
     .contacto { background: var(--blanco); }
-    .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
     .contacto h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; }
     .contacto-intro { color: var(--gris-texto); font-size: 1.05rem; margin-bottom: 34px; }
     .info-card { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
@@ -288,16 +292,17 @@
     /* ============ RESPONSIVE ============ */
     @media (max-width: 980px) {
       .detalle-grid { grid-template-columns: 1fr; gap: 36px; }
+      .detalle .caracteristicas { margin-top: 0; }
       .modelos-grid { grid-template-columns: 1fr; }
       .aplicaciones-grid { grid-template-columns: repeat(2, 1fr); }
       .contacto-grid { grid-template-columns: 1fr; gap: 44px; }
       .hero h1 { font-size: 2.5rem; }
     }
     @media (max-width: 768px) {
-      section { padding: 64px 0; }
+      section { padding: 44px 0; }
       .container { padding: 0 22px; }
       .nav-links {
-        position: absolute; top: 76px; left: 0; right: 0;
+        position: absolute; top: 92px; left: 0; right: 0;
         background: var(--blanco); flex-direction: column; gap: 0;
         border-bottom: 1px solid var(--borde); box-shadow: 0 10px 18px rgba(0,0,0,0.08);
         display: none;
@@ -374,8 +379,8 @@
             <span class="sep">&rsaquo;</span>
             <span class="actual">Metrología</span>
           </nav>
-          <h1>Metrología y control de calidad</h1>
-          <p>Instrumentos de medición y control dimensional para procesos industriales exigentes. Te asesoramos en la solución adecuada y damos respaldo técnico en Rosario y la región.</p>
+          <h1>Metrología y control de procesos</h1>
+          <p>Soluciones para la medición y el control de procesos productivos. Especialistas en scanner 3D e impresión 3D, con asesoramiento técnico y respaldo en Rosario y toda la región.</p>
           <div class="hero-botones">
             <a href="https://wa.me/+5493416913541?text=Buenos%20d%C3%ADas%2C%20quisiera%20consultar%20por%20metrolog%C3%ADa..." target="_blank" rel="noopener" class="btn btn-verde">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -393,29 +398,55 @@
     <section class="detalle">
       <div class="container">
         <span class="eyebrow">El producto</span>
-        <h2 class="seccion-h2">Qué ofrecemos en metrología</h2>
+        <h2 class="seccion-h2">Metrología</h2>
 
         <div class="detalle-grid">
           <div class="detalle-texto">
-            <p>En INDEL ofrecemos instrumentos y equipos de metrología para el control dimensional y la calidad: calibres, micrómetros, comparadores, instrumental de medición y equipos para control de procesos. Asesoramos según la tolerancia, la pieza y el nivel de exactitud que requiere cada aplicación.</p>
-            <p>Acompañamos con asesoramiento técnico y soporte para que el instrumental se integre correctamente a tu proceso de control de calidad. Más de 50 años de experiencia nos respaldan en la industria de la región.</p>
+            <p>En INDEL somos especialistas en soluciones para la medición y el control de procesos productivos. Ofrecemos scanner 3D e impresión 3D, junto con instrumental de medición y control dimensional para verificar tolerancias, ingeniería inversa y control de calidad de piezas.</p>
+            <p>Con el escaneo 3D capturamos la geometría real de una pieza para inspección, comparación contra el modelo CAD o reconstrucción de componentes; con la impresión 3D producimos prototipos y piezas funcionales. Asesoramos según la exactitud, el material y la aplicación que requiere cada proyecto, con más de 50 años de experiencia en la industria de la región.</p>
           </div>
 
           <div class="caracteristicas">
-            <h3>Características clave</h3>
+            <h3>Características principales</h3>
             <ul>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Calibres, micrómetros y comparadores</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Escaneo 3D para control dimensional</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Impresión 3D de prototipos y piezas</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Ingeniería inversa y comparación con CAD</li>
               <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Instrumental de medición dimensional</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Equipos para control de calidad de procesos</li>
               <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Alta exactitud y trazabilidad</li>
               <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Asesoramiento técnico especializado</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Soporte y respaldo posventa</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+
+    <!-- ============ MARCAS ============ -->
+    <section class="modelos">
+      <div class="container">
+        <span class="eyebrow">Marcas representadas</span>
+        <h2 class="seccion-h2">Marcas que representamos</h2>
+        <p class="seccion-desc">Trabajamos junto a fabricantes referentes en escaneo, impresión 3D y soluciones de medición.</p>
+
+        <div class="modelos-grid">
+          <a class="modelo-card" href="https://dryada.com.ar/" target="_blank" rel="noopener">
+            <div class="modelo-logo"><img src="img/logo-dryada.webp" alt="Logo Dryada" onerror="this.outerHTML='&lt;span class=&quot;modelo-logo-txt&quot;&gt;Dryada&lt;/span&gt;'"></div>
+            <div class="modelo-body">
+              <h3 class="modelo-nombre">Dryada</h3>
+              <p class="modelo-desc">Soluciones de escaneo 3D, impresión 3D y digitalización para la industria.</p>
+            </div>
+          </a>
+          <a class="modelo-card" href="https://amsarg.com.ar/" target="_blank" rel="noopener">
+            <div class="modelo-logo"><img src="img/logo-ams.webp" alt="Logo AMS" class="logo-ams" onerror="this.outerHTML='&lt;span class=&quot;modelo-logo-txt&quot;&gt;AMS&lt;/span&gt;'"></div>
+            <div class="modelo-body">
+              <h3 class="modelo-nombre">AMS</h3>
+              <p class="modelo-desc">Instrumental y equipamiento para medición y control de procesos productivos.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- ============ APLICACIONES ============ -->
     <section class="aplicaciones">
@@ -426,31 +457,31 @@
         <div class="aplicaciones-grid">
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
             </div>
-            <h3>Logística</h3>
-            <p>Depósitos y centros de distribución</p>
+            <h3>Control de calidad</h3>
+            <p>Inspección dimensional de piezas y series</p>
           </div>
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
             </div>
-            <h3>Manufactura</h3>
-            <p>Plantas de producción y montaje</p>
+            <h3>Ingeniería inversa</h3>
+            <p>Digitalización 3D de componentes existentes</p>
           </div>
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>
             </div>
-            <h3>Alimentación</h3>
-            <p>Frigoríficos, molinos y bodegas</p>
+            <h3>Prototipado</h3>
+            <p>Impresión 3D de prototipos y piezas</p>
           </div>
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" /></svg>
             </div>
             <h3>Metalurgia</h3>
-            <p>Talleres y manejo de cargas pesadas</p>
+            <p>Verificación de mecanizados y matricería</p>
           </div>
         </div>
       </div>
@@ -460,7 +491,7 @@
     <section class="cta-rojo">
       <div class="container cta-inner">
         <h2>¿Necesitás asesoramiento para elegir el equipo?</h2>
-        <p>Te ayudamos a definir el autoelevador correcto según tu carga y operación. Respondemos en menos de 24 horas.</p>
+        <p>Te ayudamos a definir la solución de medición, escaneo o impresión 3D adecuada para tu proyecto. Respondemos en menos de 24 horas.</p>
         <a href="https://wa.me/+5493416913541?text=Buenos%20d%C3%ADas%2C%20quisiera%20consultar%20por%20metrolog%C3%ADa..." target="_blank" rel="noopener" class="btn btn-blanco">
           Escribinos al WhatsApp →
         </a>
@@ -473,7 +504,7 @@
         <div class="contacto-grid">
           <div class="contacto-col">
             <span class="eyebrow">Contacto</span>
-            <h2>Solicitá información sin compromiso</h2>
+            <h2>Pedinos una cotización</h2>
             <p class="contacto-intro">Completá el formulario y un asesor comercial te contacta a la brevedad. También podés escribirnos directamente por WhatsApp.</p>
 
             <a href="tel:+543414371007" class="info-card">

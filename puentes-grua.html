@@ -39,7 +39,7 @@
       --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    html { scroll-behavior: smooth; scroll-padding-top: 108px; }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -61,8 +61,8 @@
       letter-spacing: -0.025em;
     }
 
-    .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
-    section { padding: 88px 0; }
+    .container { max-width: 1360px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 62px 0; }
 
     /* ============ BOTONES ============ */
     .btn {
@@ -115,14 +115,14 @@
       transition: box-shadow 0.2s ease;
     }
     .navbar.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
-    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 92px; }
     .logo { display: flex; align-items: center; }
-    .logo-img { height: 46px; width: auto; display: block; }
+    .logo-img { height: 58px; width: auto; display: block; }
     .nav-links { display: flex; gap: 34px; }
-    .nav-links a { font-size: 0.96rem; font-weight: 500; color: var(--gris-texto); transition: color 0.2s ease; }
+    .nav-links a { font-size: 1.08rem; font-weight: 500; color: var(--gris-texto); transition: color 0.2s ease; }
     .nav-links a:hover { color: var(--rojo); }
     .nav-right { display: flex; align-items: center; gap: 16px; }
-    .nav-cta { padding: 12px 22px; font-size: 0.92rem; }
+    .nav-cta { padding: 13px 24px; font-size: 1rem; }
     .hamburguesa { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
     .hamburguesa span { width: 24px; height: 2px; background: var(--tinta); border-radius: 2px; }
 
@@ -179,6 +179,8 @@
     /* ============ DETALLE + CARACTERÍSTICAS ============ */
     .detalle { background: var(--blanco); }
     .detalle-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; margin-top: 34px; align-items: start; }
+    .detalle .caracteristicas { align-self: start; margin-top: -92px; }
+    .detalle > .container > .eyebrow, .detalle > .container > .seccion-h2 { max-width: 620px; }
     .detalle-texto p { margin-bottom: 18px; font-size: 1.05rem; color: var(--gris-texto); }
     .detalle-texto p:last-child { margin-bottom: 0; }
     .caracteristicas {
@@ -240,7 +242,7 @@
 
     /* ============ CONTACTO ============ */
     .contacto { background: var(--blanco); }
-    .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
     .contacto h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; }
     .contacto-intro { color: var(--gris-texto); font-size: 1.05rem; margin-bottom: 34px; }
     .info-card { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
@@ -288,16 +290,17 @@
     /* ============ RESPONSIVE ============ */
     @media (max-width: 980px) {
       .detalle-grid { grid-template-columns: 1fr; gap: 36px; }
+      .detalle .caracteristicas { margin-top: 0; }
       .modelos-grid { grid-template-columns: 1fr; }
       .aplicaciones-grid { grid-template-columns: repeat(2, 1fr); }
       .contacto-grid { grid-template-columns: 1fr; gap: 44px; }
       .hero h1 { font-size: 2.5rem; }
     }
     @media (max-width: 768px) {
-      section { padding: 64px 0; }
+      section { padding: 44px 0; }
       .container { padding: 0 22px; }
       .nav-links {
-        position: absolute; top: 76px; left: 0; right: 0;
+        position: absolute; top: 92px; left: 0; right: 0;
         background: var(--blanco); flex-direction: column; gap: 0;
         border-bottom: 1px solid var(--borde); box-shadow: 0 10px 18px rgba(0,0,0,0.08);
         display: none;
@@ -393,7 +396,7 @@
     <section class="detalle">
       <div class="container">
         <span class="eyebrow">El producto</span>
-        <h2 class="seccion-h2">Qué ofrecemos en puentes grúa</h2>
+        <h2 class="seccion-h2">Puentes grúa</h2>
 
         <div class="detalle-grid">
           <div class="detalle-texto">
@@ -402,7 +405,7 @@
           </div>
 
           <div class="caracteristicas">
-            <h3>Características clave</h3>
+            <h3>Características principales</h3>
             <ul>
               <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Puentes grúa monorriel y birriel</li>
               <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Grúas pórtico y semipórtico</li>
@@ -423,27 +426,25 @@
         <h2 class="seccion-h2">Marcas que representamos</h2>
         <p class="seccion-desc">Trabajamos junto a marcas líderes en equipos de elevación, con ingeniería y respaldo técnico local.</p>
 
-        <div class="modelos-grid" style="grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;">
-          <div class="modelo-card">
+        <div class="modelos-grid" style="grid-template-columns:repeat(2,minmax(0,480px));justify-content:center;">
+          <a class="modelo-card" href="https://www.ghcranes.com/es/" target="_blank" rel="noopener">
             <div class="modelo-logo">
               <img src="img/logo-gh.svg" alt="Logo GH Cranes &amp; Components" onerror="this.outerHTML='&lt;span class=&quot;modelo-logo-txt&quot;&gt;GH Cranes&lt;/span&gt;'">
             </div>
             <div class="modelo-body">
               <h3 class="modelo-nombre">GH Cranes &amp; Components</h3>
               <p class="modelo-desc">Marca líder mundial en equipos de elevación: puentes grúa, polipastos y componentes con tecnología de última generación y respaldo internacional.</p>
-              <a href="https://wa.me/+5493416913541?text=Hola%2C%20quisiera%20consultar%20por%20puentes%20gr%C3%BAa%20GH%20Cranes" target="_blank" rel="noopener" class="btn btn-verde btn-sm">Consultar esta marca</a>
             </div>
-          </div>
-          <div class="modelo-card">
+          </a>
+          <a class="modelo-card" href="https://www.ingytec.com/" target="_blank" rel="noopener">
             <div class="modelo-logo">
               <img src="img/logo-ingytec.png" alt="Logo Ingytec" onerror="this.outerHTML='&lt;span class=&quot;modelo-logo-txt&quot;&gt;Ingytec&lt;/span&gt;'">
             </div>
             <div class="modelo-body">
               <h3 class="modelo-nombre">Ingytec</h3>
               <p class="modelo-desc">Ingeniería y fabricación de puentes grúa, pórticos y estructuras de izaje a medida, con soluciones adaptadas a cada proyecto.</p>
-              <a href="https://wa.me/+5493416913541?text=Hola%2C%20quisiera%20consultar%20por%20puentes%20gr%C3%BAa%20Ingytec" target="_blank" rel="noopener" class="btn btn-verde btn-sm">Consultar esta marca</a>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -505,7 +506,7 @@
         <div class="contacto-grid">
           <div class="contacto-col">
             <span class="eyebrow">Contacto</span>
-            <h2>Solicitá información sin compromiso</h2>
+            <h2>Pedinos una cotización</h2>
             <p class="contacto-intro">Completá el formulario y un asesor comercial te contacta a la brevedad. También podés escribirnos directamente por WhatsApp.</p>
 
             <a href="tel:+543414371007" class="info-card">

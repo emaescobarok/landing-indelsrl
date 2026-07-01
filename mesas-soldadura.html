@@ -7,10 +7,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mesas de soldadura y robots en Rosario — INDEL S.R.L. Sistemas modulares y automatización del proceso de soldadura. Venta, instalación y servicio técnico.">
+  <meta name="description" content="Mesas de soldadura Siegmund en Rosario — INDEL S.R.L. Sistemas modulares de sujeción para soldadura, fabricados por el N°1 mundial. Ideales para prototipos y series cortas.">
   <meta name="author" content="INDEL S.R.L.">
-  <meta property="og:title" content="Mesas de Soldadura — INDEL S.R.L. Rosario">
-  <meta property="og:description" content="Sistemas modulares y robots de soldadura para mayor precisión y consistencia, con instalación y servicio técnico.">
+  <meta property="og:title" content="Mesas de Soldadura Siegmund — INDEL S.R.L. Rosario">
+  <meta property="og:description" content="Mesas y sistemas de sujeción para soldadura Siegmund, fabricados por el N°1 mundial. Ideales para prototipos y series cortas.">
   <meta property="og:type" content="website">
   <title>Mesas de Soldadura — INDEL S.R.L.</title>
 
@@ -39,7 +39,7 @@
       --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
     }
 
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    html { scroll-behavior: smooth; scroll-padding-top: 108px; }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -61,8 +61,8 @@
       letter-spacing: -0.025em;
     }
 
-    .container { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
-    section { padding: 88px 0; }
+    .container { max-width: 1360px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 62px 0; }
 
     /* ============ BOTONES ============ */
     .btn {
@@ -115,14 +115,14 @@
       transition: box-shadow 0.2s ease;
     }
     .navbar.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
-    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 92px; }
     .logo { display: flex; align-items: center; }
-    .logo-img { height: 46px; width: auto; display: block; }
+    .logo-img { height: 58px; width: auto; display: block; }
     .nav-links { display: flex; gap: 34px; }
-    .nav-links a { font-size: 0.96rem; font-weight: 500; color: var(--gris-texto); transition: color 0.2s ease; }
+    .nav-links a { font-size: 1.08rem; font-weight: 500; color: var(--gris-texto); transition: color 0.2s ease; }
     .nav-links a:hover { color: var(--rojo); }
     .nav-right { display: flex; align-items: center; gap: 16px; }
-    .nav-cta { padding: 12px 22px; font-size: 0.92rem; }
+    .nav-cta { padding: 13px 24px; font-size: 1rem; }
     .hamburguesa { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
     .hamburguesa span { width: 24px; height: 2px; background: var(--tinta); border-radius: 2px; }
 
@@ -179,6 +179,8 @@
     /* ============ DETALLE + CARACTERÍSTICAS ============ */
     .detalle { background: var(--blanco); }
     .detalle-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; margin-top: 34px; align-items: start; }
+    .detalle .caracteristicas { align-self: start; margin-top: -92px; }
+    .detalle > .container > .eyebrow, .detalle > .container > .seccion-h2 { max-width: 620px; }
     .detalle-texto p { margin-bottom: 18px; font-size: 1.05rem; color: var(--gris-texto); }
     .detalle-texto p:last-child { margin-bottom: 0; }
     .caracteristicas {
@@ -198,7 +200,8 @@
 
     /* ============ MODELOS / MARCAS ============ */
     .modelos { background: var(--fondo-claro); }
-    .modelos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 44px; }
+    .modelos-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; margin-top: 44px; }
+    .modelos-grid .modelo-card { width: 480px; max-width: 100%; }
     .modelo-card {
       background: var(--blanco);
       border: 1px solid var(--borde);
@@ -209,15 +212,39 @@
     }
     .modelo-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(10,10,11,0.1); }
     .modelo-logo {
-      height: 104px; display: flex; align-items: center; justify-content: center;
-      padding: 20px 24px; border-bottom: 1px solid var(--borde);
+      height: 150px; display: flex; align-items: center; justify-content: center;
+      padding: 22px 26px; border-bottom: 1px solid var(--borde);
     }
-    .modelo-logo img { max-height: 56px; max-width: 100%; width: auto; object-fit: contain; }
+    .modelo-logo img { max-height: 92px; max-width: 84%; width: auto; object-fit: contain; }
     .modelo-logo-txt { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--tinta); }
     .modelo-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
     .modelo-nombre { font-size: 1.18rem; font-weight: 700; color: var(--tinta); margin-bottom: 8px; }
     .modelo-desc { font-size: 0.96rem; color: var(--gris-texto); margin-bottom: 22px; }
     .modelo-card .btn { width: 100%; margin-top: auto; }
+
+    /* ============ MARCA DESTACADA ============ */
+    .marca-destacada {
+      display: flex; align-items: center; gap: 44px;
+      background: var(--blanco); border: 1px solid var(--borde);
+      border-top: 3px solid var(--rojo); border-radius: var(--radio);
+      padding: 36px 44px; margin-top: 40px;
+    }
+    .marca-destacada .md-logo {
+      flex: 0 0 240px; display: flex; align-items: center; justify-content: center;
+    }
+    .marca-destacada .md-logo img { max-height: 90px; max-width: 100%; object-fit: contain; }
+    .marca-destacada .md-logo-txt { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--tinta); }
+    .marca-destacada .md-tag {
+      display: inline-block; font-size: 0.74rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--rojo); margin-bottom: 8px;
+    }
+    .marca-destacada h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; }
+    .marca-destacada p { font-size: 1rem; color: var(--gris-texto); }
+
+    @media (max-width: 900px) {
+      .marca-destacada { flex-direction: column; text-align: center; gap: 24px; }
+      .marca-destacada .md-logo { flex-basis: auto; }
+    }
 
     /* ============ APLICACIONES ============ */
     .aplicaciones { background: var(--blanco); }
@@ -240,7 +267,7 @@
 
     /* ============ CONTACTO ============ */
     .contacto { background: var(--blanco); }
-    .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
     .contacto h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; }
     .contacto-intro { color: var(--gris-texto); font-size: 1.05rem; margin-bottom: 34px; }
     .info-card { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
@@ -288,16 +315,17 @@
     /* ============ RESPONSIVE ============ */
     @media (max-width: 980px) {
       .detalle-grid { grid-template-columns: 1fr; gap: 36px; }
+      .detalle .caracteristicas { margin-top: 0; }
       .modelos-grid { grid-template-columns: 1fr; }
       .aplicaciones-grid { grid-template-columns: repeat(2, 1fr); }
       .contacto-grid { grid-template-columns: 1fr; gap: 44px; }
       .hero h1 { font-size: 2.5rem; }
     }
     @media (max-width: 768px) {
-      section { padding: 64px 0; }
+      section { padding: 44px 0; }
       .container { padding: 0 22px; }
       .nav-links {
-        position: absolute; top: 76px; left: 0; right: 0;
+        position: absolute; top: 92px; left: 0; right: 0;
         background: var(--blanco); flex-direction: column; gap: 0;
         border-bottom: 1px solid var(--borde); box-shadow: 0 10px 18px rgba(0,0,0,0.08);
         display: none;
@@ -374,8 +402,8 @@
             <span class="sep">&rsaquo;</span>
             <span class="actual">Mesas de soldadura</span>
           </nav>
-          <h1>Mesas y robots de soldadura</h1>
-          <p>Sistemas modulares de soldadura y automatización del proceso para mayor precisión, velocidad y consistencia. Asesoramos, instalamos y damos servicio técnico en Rosario y la región.</p>
+          <h1>Mesas de soldadura Siegmund</h1>
+          <p>Mesas y sistemas de sujeción para soldadura fabricados por Siegmund, el N°1 mundial. Ideales para prototipos y series cortas, con asesoramiento y respaldo técnico en Rosario y la región.</p>
           <div class="hero-botones">
             <a href="https://wa.me/+5493416913541?text=Buenos%20d%C3%ADas%2C%20quisiera%20consultar%20por%20mesas%20de%20soldadura..." target="_blank" rel="noopener" class="btn btn-verde">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -393,29 +421,47 @@
     <section class="detalle">
       <div class="container">
         <span class="eyebrow">El producto</span>
-        <h2 class="seccion-h2">Qué ofrecemos en mesas de soldadura</h2>
+        <h2 class="seccion-h2">Mesas de soldadura</h2>
 
         <div class="detalle-grid">
           <div class="detalle-texto">
-            <p>En INDEL ofrecemos sistemas modulares de mesas de soldadura y soluciones de automatización con robots para procesos de unión más precisos y repetibles. Las mesas modulares con sus accesorios de fijación permiten armar dispositivos de sujeción a medida de cada pieza y reducir los tiempos de preparación.</p>
-            <p>Asesoramos en el diseño del puesto de trabajo, integramos la automatización según el volumen de producción y acompañamos con instalación, capacitación y servicio técnico. El respaldo de más de 50 años en la industria garantiza una implementación confiable.</p>
+            <p>En INDEL representamos las mesas de soldadura Siegmund, fabricante alemán líder mundial en sistemas modulares de sujeción. Las mesas, con sus perforaciones en grilla y su amplia gama de accesorios de fijación, permiten armar dispositivos de sujeción a medida de cada pieza y reducir notablemente los tiempos de preparación y montaje.</p>
+            <p>Son la solución ideal para prototipos y series cortas, donde cada trabajo requiere una configuración distinta. Te asesoramos en la elección de la mesa y los accesorios según tus piezas, con el respaldo de más de 50 años de experiencia en la industria de la región.</p>
           </div>
 
           <div class="caracteristicas">
-            <h3>Características clave</h3>
+            <h3>Características principales</h3>
             <ul>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Mesas de soldadura modulares</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Accesorios y elementos de fijación</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Robots y automatización del proceso</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Mayor precisión, velocidad y consistencia</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Diseño de puestos de trabajo a medida</li>
-              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Instalación, capacitación y servicio técnico</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Mesas de soldadura modulares Siegmund</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Sistemas y accesorios de sujeción</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Ideales para prototipos y series cortas</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Menor tiempo de preparación y montaje</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Dispositivos de sujeción a medida</li>
+              <li><svg class="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg> Calidad alemana y asesoramiento técnico</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+
+    <!-- ============ MARCAS ============ -->
+    <section class="modelos">
+      <div class="container">
+        <span class="eyebrow">Marca representada</span>
+        <h2 class="seccion-h2">Marca que representamos</h2>
+        <p class="seccion-desc">Representamos a Siegmund, referente mundial en mesas y sistemas de sujeción para soldadura.</p>
+
+        <a class="marca-destacada" href="https://www.siegmund.com/" target="_blank" rel="noopener">
+          <div class="md-logo"><img src="img/logo-siegmud.png" alt="Logo Siegmund" onerror="this.outerHTML='&lt;span class=&quot;md-logo-txt&quot;&gt;Siegmund&lt;/span&gt;'"></div>
+          <div class="md-texto">
+            <span class="md-tag">Fabricante N°1 mundial</span>
+            <h3>Siegmund — calidad alemana en sujeción para soldadura</h3>
+            <p>Mesas de soldadura y sistemas modulares de sujeción de fabricación alemana, referentes a nivel mundial por su precisión y versatilidad para armar dispositivos a medida.</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <!-- ============ APLICACIONES ============ -->
     <section class="aplicaciones">
@@ -426,31 +472,31 @@
         <div class="aplicaciones-grid">
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg>
             </div>
-            <h3>Logística</h3>
-            <p>Depósitos y centros de distribución</p>
+            <h3>Metalmecánica</h3>
+            <p>Talleres de soldadura y estructuras</p>
           </div>
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
             </div>
-            <h3>Manufactura</h3>
-            <p>Plantas de producción y montaje</p>
+            <h3>Prototipos</h3>
+            <p>Desarrollo de piezas y preseries</p>
           </div>
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>
             </div>
-            <h3>Alimentación</h3>
-            <p>Frigoríficos, molinos y bodegas</p>
+            <h3>Series cortas</h3>
+            <p>Producción flexible y bajo volumen</p>
           </div>
           <div class="aplicacion-item">
             <div class="aplicacion-icono">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" /></svg>
             </div>
-            <h3>Metalurgia</h3>
-            <p>Talleres y manejo de cargas pesadas</p>
+            <h3>Carrocerías y agro</h3>
+            <p>Armado de conjuntos y estructuras</p>
           </div>
         </div>
       </div>
@@ -460,7 +506,7 @@
     <section class="cta-rojo">
       <div class="container cta-inner">
         <h2>¿Necesitás asesoramiento para elegir el equipo?</h2>
-        <p>Te ayudamos a definir el autoelevador correcto según tu carga y operación. Respondemos en menos de 24 horas.</p>
+        <p>Te ayudamos a elegir la mesa Siegmund y los accesorios de sujeción adecuados para tus piezas. Respondemos en menos de 24 horas.</p>
         <a href="https://wa.me/+5493416913541?text=Buenos%20d%C3%ADas%2C%20quisiera%20consultar%20por%20mesas%20de%20soldadura..." target="_blank" rel="noopener" class="btn btn-blanco">
           Escribinos al WhatsApp →
         </a>
@@ -473,7 +519,7 @@
         <div class="contacto-grid">
           <div class="contacto-col">
             <span class="eyebrow">Contacto</span>
-            <h2>Solicitá información sin compromiso</h2>
+            <h2>Pedinos una cotización</h2>
             <p class="contacto-intro">Completá el formulario y un asesor comercial te contacta a la brevedad. También podés escribirnos directamente por WhatsApp.</p>
 
             <a href="tel:+543414371007" class="info-card">
