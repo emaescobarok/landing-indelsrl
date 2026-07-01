@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indelsrl.com.ar/sitemap.xml

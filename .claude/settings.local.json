@@ -45,7 +45,8 @@
       "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en puentes grúa</h2>#<h2 class=\"seccion-h2\">Puentes grúa</h2>#' puentes-grua.html)",
       "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en aire comprimido</h2>#<h2 class=\"seccion-h2\">Aire comprimido</h2>#' aire-comprimido.html)",
       "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en máquinas herramientas</h2>#<h2 class=\"seccion-h2\">Máquinas herramientas</h2>#' maquinas-herramientas.html)",
-      "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en mesas de soldadura</h2>#<h2 class=\"seccion-h2\">Mesas de soldadura</h2>#' mesas-soldadura.html)"
+      "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en mesas de soldadura</h2>#<h2 class=\"seccion-h2\">Mesas de soldadura</h2>#' mesas-soldadura.html)",
+      "Bash(git checkout *)"
     ],
     "additionalDirectories": [
       "\\tmp"
