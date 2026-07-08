@@ -46,7 +46,13 @@
       "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en aire comprimido</h2>#<h2 class=\"seccion-h2\">Aire comprimido</h2>#' aire-comprimido.html)",
       "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en máquinas herramientas</h2>#<h2 class=\"seccion-h2\">Máquinas herramientas</h2>#' maquinas-herramientas.html)",
       "Bash(sed -i 's#<h2 class=\"seccion-h2\">Qué ofrecemos en mesas de soldadura</h2>#<h2 class=\"seccion-h2\">Mesas de soldadura</h2>#' mesas-soldadura.html)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(grep -vE '^\\\\.git$|^\\\\.\\\\.?$|^\\\\.claude$|^\\\\.gitattributes$')",
+      "Bash(curl -sI -A \"facebookexternalhit/1.1\" https://indelsrl.com.ar/)",
+      "Bash(curl -s -A \"facebookexternalhit/1.1 \\(+http://www.facebook.com/externalhit_uatext.php\\)\" https://indelsrl.com.ar/)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" -H \"Accept: text/html\" https://indelsrl.com.ar/)",
+      "Bash(curl -sI -A \"Mozilla/5.0\" https://indelsrl.com.ar/)",
+      "Bash(curl -s -A \"facebookexternalhit/1.1\" -H \"Accept: text/html,*/*\" https://indelsrl.com.ar/)"
     ],
     "additionalDirectories": [
       "\\tmp"
