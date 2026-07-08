@@ -52,7 +52,15 @@
       "Bash(curl -s -A \"facebookexternalhit/1.1 \\(+http://www.facebook.com/externalhit_uatext.php\\)\" https://indelsrl.com.ar/)",
       "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" -H \"Accept: text/html\" https://indelsrl.com.ar/)",
       "Bash(curl -sI -A \"Mozilla/5.0\" https://indelsrl.com.ar/)",
-      "Bash(curl -s -A \"facebookexternalhit/1.1\" -H \"Accept: text/html,*/*\" https://indelsrl.com.ar/)"
+      "Bash(curl -s -A \"facebookexternalhit/1.1\" -H \"Accept: text/html,*/*\" https://indelsrl.com.ar/)",
+      "Bash(nslookup 149.50.128.6)",
+      "Bash(whois 149.50.128.6)",
+      "Bash(nslookup -type=ns indelsrl.com.ar)",
+      "Bash(curl -A \"facebookexternalhit/1.1\" -s https://indelsrl.com.ar/)",
+      "Bash(grep -E '\\\\.\\(html|xml\\)$|htaccess')",
+      "Bash(awk '{print $1}')",
+      "Bash(awk 'NF{print $1}')",
+      "Bash(awk '/<\\\\/body>/{found=1} found{print} /<\\\\/html>/{exit}' metrologia.html)"
     ],
     "additionalDirectories": [
       "\\tmp"

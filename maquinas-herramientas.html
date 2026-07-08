@@ -571,7 +571,7 @@
           </div>
 
           <div class="contacto-col">
-            <form class="form" action="mailto:comercial@indelsrl.com.ar" method="post" enctype="text/plain">
+            <form class="form" id="formContacto">
               <input type="text" name="Nombre y empresa" placeholder="Nombre y empresa" required>
               <input type="text" name="Telefono o WhatsApp" placeholder="Teléfono o WhatsApp" required>
               <select name="Producto de interes">
@@ -655,5 +655,21 @@
     })();
   </script>
 
+  <script>
+    (function(){
+      var f = document.getElementById("formContacto");
+      if(!f) return;
+      f.addEventListener("submit", function(e){
+        e.preventDefault();
+        var g = function(n){ var el = f.querySelector('[name="'+n+'"]'); return el ? el.value.trim() : ""; };
+        var texto = "Hola, quisiera hacer una consulta." +
+          "\n\nNombre y empresa: " + g("Nombre y empresa") +
+          "\nTeléfono/WhatsApp: " + g("Telefono o WhatsApp") +
+          "\nProducto de interés: " + g("Producto de interes");
+        var m = g("Mensaje"); if(m) texto += "\nMensaje: " + m;
+        window.open("https://wa.me/5493416913541?text=" + encodeURIComponent(texto), "_blank");
+      });
+    })();
+  </script>
 </body>
 </html>
